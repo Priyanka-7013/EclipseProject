@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Student details</title>
+</head>
+<body>
+      <h1>Student details</h1>
+      
+      <table border="1">
+             <thead>
+                   <tr>
+                       <th>Roll</th>
+                       <th>Name</th>
+                       <th>Branch</th>
+                       <th>YOP</th>
+                       <th>CGPA</th>
+                   </tr>
+             </thead>
+             <tbody>
+                    <tr th:each="s1:${studentList}">
+                    <td th:text="${s1.roll}"></td>
+                    <td th:text="${s1.name}"></td>
+                    <td th:text="${s1.branch}"></td>
+                    <td th:text="${s1.yop}"></td>
+                    <td th:text="${s1.cgpa}"></td>
+                    </tr>
+             </tbody>
+      </table>
+
+</body>
+</html>
